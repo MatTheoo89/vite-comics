@@ -15,9 +15,9 @@ export default {
 
                 </div>
 
-                <!-- <div class="col-right">
+                <div class="col-right">
                     <img src="../assets/img/dc-logo-bg.png" alt="dc-logo">
-                </div> -->
+                </div>
 
             </div>
         </div>
@@ -50,10 +50,25 @@ footer{
 }
 
 .footer-top{
-    display: flex;
-    justify-content: space-between;
     height: 80%;
     background-image: url('../src/assets/img/footer-bg.jpg');
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .col-left{
+            width: 50%;
+            height: 100%;
+            background-color: aquamarine;
+        }
+        .col-right{
+            width: 45%;
+            overflow: hidden;
+            img{
+                transform: translate(-5%, -17%);
+            }
+        }
+    }
 }
 
 .footer-bottom{
