@@ -107,7 +107,7 @@ header{
         justify-content: space-between;
 
         img{
-            width: 90%;
+            width: 90px;
         }
 
         nav{
