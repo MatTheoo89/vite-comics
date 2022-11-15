@@ -13,6 +13,53 @@ export default {
 
                 <div class="col-left">
 
+                    <div class="col">
+                        <h2>Dc commics</h2>
+                        <ul>
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>Tv</li>
+                            <li>Games</li>
+                            <li>Collectibles</li>
+                            <li>News</li>
+                        </ul>
+
+                        <h2>Shop</h2>
+                        <ul>
+                            <li>Shop DC</li>
+                            <li>Shop DC Collectibles</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h2>Dc</h2>
+                        <ul>
+                            <li>Term Of USe</li>
+                            <li>Privacy policy (new)</li>
+                            <li>Ad Choises</li>
+                            <li>Advertising</li>
+                            <li>Jobs</li>
+                            <li>Subscriptions</li>
+                            <li>Talent Workshops</li>
+                            <li>CPSC Certificates</li>
+                            <li>Rating</li>
+                            <li>Shop Help</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h2>Sites</h2>
+                        <ul>
+                            <li>DC</li>
+                            <li>MAD Magazione</li>
+                            <li>DC Kids</li>
+                            <li>DC Universe</li>
+                            <li>DC Power Visa</li>
+                        </ul>
+                    </div>
+
                 </div>
 
                 <div class="col-right">
@@ -57,15 +104,41 @@ footer{
         display: flex;
         justify-content: space-between;
         .col-left{
-            width: 50%;
+            display: flex;
+            width: 45%;
             height: 100%;
-            background-color: aquamarine;
+            .col{
+                width: calc(100% / 3);
+                padding: 30px 15px;
+                margin: 10px;
+                h2{
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        color: grey;
+                        font-size: .75rem;
+                        margin-bottom: 7px;
+                        &:hover{
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                        &:last-child{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
         }
         .col-right{
-            width: 45%;
-            overflow: hidden;
+            overflow-y:hidden ;
             img{
-                transform: translate(-5%, -17%);
+                transform: translate(-5%,-17%);
             }
         }
     }
@@ -73,7 +146,7 @@ footer{
 
 .footer-bottom{
     height: 20%;
-    background-color: rgb(80, 79, 79);
+    background-color: #444444;
     .container{
         height: 100%;
         display: flex;
@@ -84,7 +157,7 @@ footer{
             color: #fff;
             font-size: .8rem;
             font-weight: 600;
-            border:2px solid $blue-color;
+            border:3px solid $blue-color;
             background-color: transparent;
             padding: 7px 10px;
         }

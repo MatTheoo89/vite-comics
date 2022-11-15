@@ -30,7 +30,7 @@ export default {
                     active: false
                 },
                 {
-                    text: 'ollectibles',
+                    text: 'Collectibles',
                     href: '#',
                     active: false
                 },
