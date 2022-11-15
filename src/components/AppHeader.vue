@@ -1,9 +1,9 @@
 <script>
 export default {
-  name: "App",
+    name: "AppHeader",
 };
 </script>
 
 <template></template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped></style>
