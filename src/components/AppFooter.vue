@@ -138,7 +138,7 @@ footer{
         .col-right{
             overflow-y:hidden ;
             img{
-                transform: translate(-5%,-17%);
+                transform: translateY(-17%);
             }
         }
     }
