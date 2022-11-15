@@ -97,18 +97,28 @@ export default {
 
 header{
     background-color: #fff;
+    height: 120px;
     
     .container{
-        padding: 20px 0;
+        height: 100%;
+        // padding: 20px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
+        img{
+            width: 90%;
+        }
+
         nav{
+            height: 100%;
+            display: flex;
+            align-items: center;
             ul{
                 display: flex;
                 list-style: none;
                 li{
+                    display: inline-block;
                     position: relative;
                     font-weight: 600;
                     padding: 0 10px;
@@ -128,11 +138,12 @@ header{
                             content: '';
                             position: absolute;
                             left: 50%;
-                            bottom: -350%;
+                            bottom: -280%;
                             width: 100%;
                             height: 7px;
                             transform: translate(-50%, -50%);
                             background-color:$blue-color;
+                            border-radius: 5px;
                     }
                 }
             }

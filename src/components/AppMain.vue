@@ -24,7 +24,7 @@ export default {
 
     .container{
         color: #fff;
-        padding: 50px 0;
+        padding: 80px 0;
     }
 
 </style>
