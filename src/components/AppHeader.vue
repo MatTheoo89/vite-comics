@@ -68,7 +68,7 @@ export default {
 
         <div class="logo">
 
-            <img :src="`/dc-logo.png`" alt="">
+            <img :src="`/dc-logo.png`" alt="dc-logo">
 
         </div>
 
@@ -77,7 +77,11 @@ export default {
                 <li
                     v-for="(link, index) in navMenu"
                     :key="index">
-                <a href="#">${link.text}</a></li>
+                    <a
+                        :class="{'active': link.active}"
+                        :href="link.href">{{link.text}}
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -88,8 +92,51 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-    header{
-        background-color: #fff;
+
+@use '../style/partials/variables' as *;
+
+header{
+    background-color: #fff;
+    
+    .container{
         padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        nav{
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    position: relative;
+                    font-weight: 600;
+                    padding: 0 10px;
+                    text-transform: uppercase;
+                    height: 100%;
+                    
+                    }
+                    a{
+                        display: inline-block;
+                        color: $grey-main;
+                        text-decoration: none;
+                        &:hover,
+                        &.active{
+                            color: $blue-color;
+                        }
+                        &.active::after{
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            bottom: -350%;
+                            width: 100%;
+                            height: 5px;
+                            transform: translate(-50%, -50%);
+                            background-color:$blue-color;
+                    }
+                }
+            }
+        }
     }
+}
 </style>
