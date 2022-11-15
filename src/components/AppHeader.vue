@@ -130,7 +130,7 @@ header{
                             left: 50%;
                             bottom: -350%;
                             width: 100%;
-                            height: 5px;
+                            height: 7px;
                             transform: translate(-50%, -50%);
                             background-color:$blue-color;
                     }
