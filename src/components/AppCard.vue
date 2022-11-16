@@ -32,24 +32,26 @@ export default {
     @use '../style/partials/variables' as *;
 
     .card{
-        flex-basis: 20%;
-        padding: 15px;
+        background-color: red;
+        border: 1px solid black;
+        width: calc(100% / 6);
+        padding: 20px 10px;
         .card-image{
-            width: 200px;
-            height: 200px;
             overflow: hidden;
             margin-bottom: 10px;
+            text-align: center;
             img{
-                max-width: 100%;
+                width: 200px;
+                height: 200px;
                 object-fit: cover;
                 object-position: top;
-                text-align: center;
         }
     }
     span{
         text-align: left;
         text-transform: uppercase;
         font-size: .8rem;
+        padding-left: 4px;
     }
     }
 

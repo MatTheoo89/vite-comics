@@ -63,9 +63,10 @@ export default {
         padding: 10px 25px;
         color: #fff;
         font-size: 1.2rem;
+        font-weight: 600;
         text-transform: uppercase;
         &.top{
-            font-weight: 500;
+            letter-spacing: 1px;
             transform: translateY(-170%);
         }
     }
@@ -85,5 +86,10 @@ export default {
     .button{
     text-align: center;
     margin-bottom: 50px;
+    button{
+        padding: 10px 60px;
+        font-size: .9rem;
+
+    }
     }
 </style>
