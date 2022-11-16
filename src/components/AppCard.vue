@@ -10,7 +10,7 @@ export default {
 <template>
     <div class="card">
         <div class="card-image">
-            <img :src="cardItem.thumb" alt="cardItem.series">
+            <img :src="cardItem.thumb" :alt="cardItem.series">
         </div>
         <div class="card-text">
             <span>{{cardItem.series}}</span>
