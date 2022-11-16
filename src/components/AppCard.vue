@@ -32,8 +32,6 @@ export default {
     @use '../style/partials/variables' as *;
 
     .card{
-        background-color: red;
-        border: 1px solid black;
         width: calc(100% / 6);
         padding: 20px 10px;
         .card-image{
