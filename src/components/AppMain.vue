@@ -28,9 +28,13 @@ export default {
 
                 <AppCard v-for="(article, index) in articles" :key="index" :cardItem="article"/>
 
-                <button>Load More</button>
             </div>
             
+            
+        </div>
+        
+        <div class="button">
+            <button>Load More</button>
         </div>
 
     </main>
@@ -60,10 +64,9 @@ export default {
         color: #fff;
         font-size: 1.2rem;
         text-transform: uppercase;
-        text-align: center;
         &.top{
             font-weight: 500;
-            transform: translateY(-230%);
+            transform: translateY(-170%);
         }
     }
 
@@ -71,11 +74,16 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     .container{
         color: #fff;
-        padding: 80px 0;
+        padding: 50px 0;
     }
-
+    
+    .button{
+    text-align: center;
+    margin-bottom: 50px;
+    }
 </style>
