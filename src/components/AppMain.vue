@@ -1,12 +1,12 @@
 <script>
 import AppCard from './AppCard.vue';
-import Articles from '../data/dc-comics'
+import articles from '../data/dc-comics'
 export default {
-  components: { AppCard },
     name: "AppMain",
+    components: { AppCard },
     data(){
         return{
-            Articles
+            articles
         }
     }
 }
@@ -26,7 +26,7 @@ export default {
             
             <div class="card-area">
 
-                <AppCard v-for="(card, index) in Articles" :key="index" :cardItem="card"/>
+                <AppCard v-for="(article, index) in articles" :key="index" :cardItem="article"/>
 
                 <button>Load More</button>
             </div>

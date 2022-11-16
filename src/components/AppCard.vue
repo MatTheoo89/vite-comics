@@ -2,24 +2,46 @@
 export default {
     name: 'AppCard',
     props: {
-        cardItem : String
+        cardItem : Object
     }
 }
 </script>
 
 <template>
-    <div class="card">
+
+<div class="card">
+
         <div class="card-image">
+
             <img :src="cardItem.thumb" :alt="cardItem.series">
+
         </div>
+
         <div class="card-text">
+
             <span>{{cardItem.series}}</span>
+
         </div>
+
     </div>
+
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
     @use '../style/partials/variables' as *;
+
+    .card{
+        text-align: center;
+        padding: 15px;
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        img{
+            max-width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
 
 </style>
